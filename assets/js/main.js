@@ -25,10 +25,10 @@
       // === logo change
       if (ud_header.classList.contains("sticky")) {
         document.querySelector(".header-logo").src =
-          "../assets/images/logo/logo-DBA.png"
+          "assets/images/logo/logo-DBA.png"
       } else {
         document.querySelector(".header-logo").src =
-          "../assets/images/logo/Logo-DBA_Blanco.png"
+          "assets/images/logo/Logo-DBA_Blanco.png"
       }
     }
 
@@ -37,7 +37,7 @@
         // === logo change
         if (ud_header.classList.contains("sticky")) {
           document.querySelector(".header-logo").src =
-            "../assets/images/logo/Logo-DBA_Blanco.png"
+            "assets/images/logo/Logo-DBA_Blanco.png"
         } 
       }
     }
