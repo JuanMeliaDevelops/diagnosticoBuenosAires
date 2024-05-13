@@ -546,8 +546,13 @@ body {
 .titulosText{
   font-size: 2rem;
 }
+
 .estudiosPad {
   padding-top: 150px; 
+}
+
+.estudiosText{
+  width: 55vw;
 }
 
 #navbarToggler span{
@@ -3157,6 +3162,10 @@ body {
 }
 
 @media  (max-width: 959px) {
+
+  .estudiosText{
+    width: 90vw;
+  }
   /* Cambiar el color de los iconos SVG a blanco */
   .fill-current-contact {
     fill: #ffffff; /* Cambiar a blanco */
