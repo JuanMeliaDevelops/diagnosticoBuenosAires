@@ -543,6 +543,12 @@ body {
 }
 
 /* my classes  */
+.titulosText{
+  font-size: 2rem;
+}
+.estudiosPad {
+  padding-top: 150px; 
+}
 
 #navbarToggler span{
   background-color: white;
