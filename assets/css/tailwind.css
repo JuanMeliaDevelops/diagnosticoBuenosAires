@@ -227,18 +227,6 @@ select {
 2. Remove default button styles.
 */
 
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
-}
-
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
@@ -276,13 +264,6 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
 
 /*
 Remove the inner padding in Chrome and Safari on macOS.
@@ -408,19 +389,6 @@ Make sure disabled buttons don't get the pointer cursor.
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
-}
 
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
@@ -572,13 +540,7 @@ body {
   font-size: 2rem;
 }
 
-.estudiosPad {
-  padding-top: 150px; 
-}
 
-.estudiosText{
-  width: 55vw;
-}
 
 #navbarToggler span{
   background-color: white;
@@ -610,6 +572,64 @@ body {
   padding-right: 16px;
   padding-left: 16px;
 }
+.estudiosContainer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.estudiosContainer div {
+  margin: 1.5%;
+  border-radius: 15px;
+  width: 280px;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.estudiosContainer div h4 {
+  width: 100%;
+  padding: 4%;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.estudiosContainer div:hover {
+  cursor: pointer;
+  opacity: 0.8 !important;
+  transform: scale(1.05);
+}
+
+.estudiosContainer div:hover h4 {
+  font-size: 1.1em;
+}
+
+.estudiosContainer div .info {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+}
+
+.estudiosContainer div.show-info .info {
+  display: block;
+}
+
 
 .banner-institucional{
   width: 100%;
@@ -656,13 +676,76 @@ body {
   fill: #111928;
 }
 
-.footer-buttons{
-  width: 70%;
+footer{
+  background: -webkit-linear-gradient(right, #235779, #103144) !important; /* Para navegadores antiguos de WebKit */
+  background: -moz-linear-gradient(right, #235779, #103144); /* Para Firefox */
+  background: -o-linear-gradient(right, #235779, #103144); /* Para Opera */
+  background: linear-gradient(to bottom, #235779, #103144); /* Estándar moderno */
 }
+
 
 .text-right{
   text-align: right;
 }
+
+
+.phone-button-container {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.phone-button {
+  width: 60px;
+  height: 60px;
+  background-color: #235779;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.phone-button:hover {
+  background-color: #1e4a62;
+  transform: translateY(-5px) rotate(-10deg); /* Efecto de desplazamiento hacia arriba e inclinación */
+
+}
+
+.phone-numbers {
+  display: none;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.phone-numbers a {
+  background-color: white;
+  color: #235779;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  
+}
+
+.phone-numbers a:hover {
+  opacity: 0.9 !important;
+  background-color: #f0f0f0;
+}
+
+.show-phone-numbers .phone-numbers {
+  display: flex;
+}
+
+
 
 @media (min-width: 540px){
 

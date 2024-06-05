@@ -4,31 +4,23 @@
   // ======= Sticky
   window.onscroll = function () {
     const ud_header = document.querySelector(".ud-header");
-    const dropdown = document.getElementById("dropdown");
     const sticky = ud_header.offsetTop;
     const logo = document.querySelectorAll(".header-logo");
-    
+
     if (window.pageYOffset > sticky) {
       ud_header.classList.add("sticky");
-
-      dropdown.classList.remove("fill-dropdown");
-      dropdown.classList.add("fill-dropdown2");
     } else {
       ud_header.classList.remove("sticky");
-
-      dropdown.classList.remove("fill-dropdown2");
-      dropdown.classList.add("fill-dropdown");
-     
     }
 
     if(logo.length) {
       // === logo change
       if (ud_header.classList.contains("sticky")) {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/logo_dba.png"
+        "assets/images/logo/logo_dba.png"
       } else {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/logo_dba_blanco.png"
+        "assets/images/logo/logo_dba_blanco.png"
       }
     }
 
@@ -37,7 +29,7 @@
         // === logo change
         if (ud_header.classList.contains("sticky")) {
           document.querySelector(".header-logo").src =
-            "assets/images/logo/logo_dba_blanco.png"
+          "assets/images/logo/logo_dba_blanco.png"
         } 
       }
     }
@@ -81,16 +73,7 @@
     });
   });
 
-  // ===== Faq accordion
-  const faqs = document.querySelectorAll(".single-faq");
-  faqs.forEach((el) => {
-    el.querySelector(".faq-btn").addEventListener("click", () => {
-      el.querySelector(".icon").classList.toggle("rotate-180");
-      el.querySelector(".faq-content").classList.toggle("hidden");
-    });
-  });
-
-
+  
 
   // ====== scroll top js
   function scrollTo(element, to = 0, duration = 500) {
@@ -125,24 +108,5 @@
     scrollTo(document.documentElement);
   };
 
-   
+
 })();
-
-
-
-/* Scroll Down a estudios  Animacion */
-
-const scrollDown = document.getElementById("scroll-down");
-
-scrollDown.addEventListener('mouseenter', function(event){
-scrollDown.classList.add("animate__animated", "animate__bounce");
-} );
-
-scrollDown.addEventListener('mouseleave', function(event) {
-
-setTimeout(function() {
-scrollDown.classList.remove("animate__animated", "animate__bounce");
-}, 1200); 
-});
-
-
