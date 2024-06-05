@@ -551,6 +551,23 @@ body {
   padding-left: 4%;
 }
 
+
+#scroll-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+  padding-bottom: 25px;
+  width: 5vw;
+  text-align: center;
+  justify-content: center;
+}
+
+#scroll-down img{
+  margin: auto;
+}
 .titulosText{
   font-size: 2rem;
 }
@@ -575,7 +592,7 @@ body {
   height: 100vh;
   background-image: url("../images/feed/img1.jpg");
   background-size: cover;
-  align-content:center ;
+  align-content: center;
 }
 
 .submenu-item{

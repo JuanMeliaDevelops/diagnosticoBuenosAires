@@ -25,15 +25,10 @@
 
   <!-- Css Links -->
   <link rel="shortcut icon" href="assets/images/logo/logo_Icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- ==== WOW JS ==== -->
-  <script src="assets/js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 
 </head>
 
@@ -52,21 +47,27 @@
     <div class=" container">
       <div class="-mx-4 flex flex-wrap items-center ">
         <div class="w-full px-4">
-          <div class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
+
+          <div class="pb-[60px] mx-auto max-w-[780px] text-center" >
+            
             <h1
-              class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
+              class="hidden">
               Diagnóstico Buenos Aires
             </h1>
+
+            <div class="mx-auto max-w-[485px]  ">
+              <img class="mx-auto w-full" src="assets/images/logo/Logo-Blanco-Main.png" alt="">
+            </div>
 
             <h2
               class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-8xl lg:leading-[1.2]">
               El primer centro de diagnóstico y tratamiento situado en el corazón de Canning</h2>
 
-            <p class="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-              Tecnología, profesionalismo, calidad médica y atención centrada en las personas
+            <p class="mx-auto mb-9  text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
+              Tecnología, profesionalismo, calidad médica y atención centrada en las personas.
               <br>
-              Su ubicación estratégica garantiza accesibilidad para aquellos que buscan servicios médicos de calidad en
-              un entorno innovador
+              Ubicación estratégica que garantiza accesibilidad para aquellos que buscan servicios médicos de calidad en
+              un entorno innovador.
             </p>
           
 
@@ -75,11 +76,14 @@
 
       </div>
     </div>
+
+    <a href="#estudios"> <div id="scroll-down"> <img src="assets/images/icons/down-arrow.png"> </div> </a>
+
   </div>
   <!-- ====== Hero Section End -->
 
   <!-- ====== Features Section Start -->
-  <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
+  <section id="estudios" class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
     <div class="container">
       <div class="-mx-4 flex flex-wrap">
         <div class="w-full px-4">
@@ -526,8 +530,7 @@
   <!-- ====== Components -->
   <script src="assets/js/Components/navBar.js"></script>
   <script src="assets/js/Components/footer.js"></script>
-
-  <script src="assets/js/swiper-bundle.min.js"></script>
+  
   <script src="assets/js/main.js"></script>
 
 </body>
