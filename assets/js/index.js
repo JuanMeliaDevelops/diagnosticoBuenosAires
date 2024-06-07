@@ -54,6 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const title = this.getAttribute('data-title');
         const info = this.getAttribute('data-info');
         const imgSrc = this.style.backgroundImage.slice(5, -2);
+        const idEstudio = this.getAttribute('id');
+
+    /*     window.location.href = `#${idEstudio}`; */
 
         estudioTitle.innerText = title;
         estudioContent.innerText = info;
@@ -72,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     closeBtn.addEventListener('click', function () {
       estudioInfo.classList.add('hidden');
       estudios.forEach(e => e.classList.remove('hidden'));
+      
     });
 
     // Cerrar al hacer clic fuera del elemento
