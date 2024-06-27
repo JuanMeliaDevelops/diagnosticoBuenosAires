@@ -2293,50 +2293,43 @@ footer{
   opacity: 1;
 }
 
-.sticky .loginBtn{
-  --tw-text-opacity: 1;
-  color: #103144;
+.loginBtn {
+  margin: 2%;
+  width: 180px; /* Ajuste en px */
+  height: 60px; /* Ajuste en px */
+  font-size: 1.2rem;
+  align-content: center;
+  text-align: center;
+  border: 2px solid #235779;
+  background-color: white;
+  color: #235779;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.sticky .loginBtn:hover{
-  --tw-text-opacity: 1;
-  color: #9BBBBF;
-  opacity: 1;
-}
-
-:is(.dark .sticky .loginBtn){
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-:is(.dark .sticky .loginBtn:hover){
-  --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
-}
-
-.sticky .signUpBtn{
-  --tw-bg-opacity: 1;
+.loginBtn:hover {
   background-color: #235779;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: white;
 }
 
-.sticky .signUpBtn:hover{
-  --tw-bg-opacity: 1;
-  background-color: #235779 ;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.signUpBtn {
+  margin: 2%;
+  width: 220px; /* Ajuste en px */
+  height: 60px; /* Ajuste en px */
+  font-size: 1.2rem;
+  text-align: center;
+  align-content: center;
+  background-color: #235779;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.sticky #themeSwitcher ~ span{
-  --tw-text-opacity: 1;
-  color: #103144;
+.signUpBtn:hover {
+  border: 2px solid #235779;
+  background-color: white;
+  color: #235779;
 }
 
-:is(.dark .sticky #themeSwitcher ~ span){
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
+
 
 .navbarTogglerActive > span:nth-child(1){
   top: 7px;
