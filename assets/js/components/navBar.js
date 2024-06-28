@@ -5,9 +5,9 @@ navBar.innerHTML = `
 
 <!-- ====== Navbar Section Start -->
 
-<div class="navBarContainer absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header sticky ">
+<div class="navBarContainer  z-40 flex items-center w-full bg-transparent sticky">
 
-  <div class="relative flex items-center justify-between w-full -mx-4">
+  <div class=" flex items-center justify-between w-full -mx-4">
 
     <div class=" w-60 max-w-full ">
       <a href="index.html" class="navbar-logo block w-full py-5">
@@ -28,51 +28,51 @@ navBar.innerHTML = `
           class="absolute  items-center right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-dark-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6">
           <ul class="block lg:flex 2xl:ml-20">
             <li class="group relative">
-              <a href="#home"
+              <a href="index.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
                 Inicio
               </a>
             </li>
 
             <li class="group relative">
-              <a href="#estudios"
+              <a href="estudios.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Estudios
               </a>
             </li>
 
             <li class="group relative">
-              <a href="#lab"
+              <a href="laboratorio.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Laboratorio
               </a>
             </li>
             <li class="group relative">
-              <a href="#kine"
+              <a href="kinesiologia.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Kinesiología
               </a>
             </li>
             <li class="group relative">
-              <a href="#consultorio"
+              <a href="consultorios.html"
                 class="ud-menu-scroll text-center mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Consultorios Médicos
               </a>
             </li>
             <li class="group relative">
-              <a href="#quirofano"
+              <a href="quirofano.html"
                 class="ud-menu-scroll  mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Quirófano
               </a>
             </li>
             <li class="group relative">
-              <a href="#institucional"
+              <a href="institucional.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Institucional
               </a>
             </li>
             <li class="group relative">
-              <a href="#contact"
+              <a href="contacto.html"
                 class="ud-menu-scroll mx-8 flex py-2  font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10">
                 Contacto
               </a>
@@ -89,6 +89,8 @@ navBar.innerHTML = `
 
 </div>
 <!-- ====== NavBar END -->
+
+<div style="height: 10.5vh;"></div>
 
 
 `

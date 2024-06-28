@@ -63,37 +63,37 @@ footer.innerHTML = `
             </li>
             <li>
             <li>
-              <a href="#estudios" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="estudios.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Estudios
               </a>
             </li>
             <li>
-              <a href="index.html#lab" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="laboratorio.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Laboratorio
               </a>
             </li>
             <li>
-              <a href="index.html#kine" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="kinesiologia.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Kinesiología
               </a>
             </li>
             <li>
-              <a href="index.html#quirofano" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="quirofano.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Quirófano
               </a>
             </li>
             <li>
-              <a href="index.html#institucional" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="institucional.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Institucional
               </a>
             </li>
             <li>
-              <a href="index.html#consultorio" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="consultorios.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Consultorios Médicos
               </a>
             </li>
             <li>
-              <a href="index.html#contact" class="mb-3 inline-block text-base text-gray-7 ">
+              <a href="contacto.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Contacto
               </a>
             </li>
