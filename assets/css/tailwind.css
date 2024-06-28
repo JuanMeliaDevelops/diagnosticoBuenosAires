@@ -512,6 +512,7 @@ body {
 
 /* my classes  */
 
+
 .navBarContainer{
   text-transform: uppercase;
   font-size: 0.8rem !important;
@@ -682,11 +683,6 @@ button {
 
 
 
-#contact button:hover, a:hover{
-  opacity: 0.5;
-}
-
-
 .alertas {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -745,7 +741,7 @@ footer{
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s ease; ;
 }
 
 .phone-button:hover {
@@ -2295,7 +2291,7 @@ footer{
 
 .loginBtn {
   margin: 2%;
-  width: 180px; /* Ajuste en px */
+  width: 220px; /* Ajuste en px */
   height: 60px; /* Ajuste en px */
   font-size: 1.2rem;
   align-content: center;
@@ -2325,7 +2321,7 @@ footer{
 
 .signUpBtn:hover {
   border: 2px solid #235779;
-  background-color: white;
+  background-color: #9BBBBF;
   color: #235779;
 }
 
