@@ -682,6 +682,9 @@ button {
 
 /* Estudios End */
 
+.h-screen{
+  margin-bottom: 10vw;
+}
 
 .alertas {
   position: relative;
@@ -695,9 +698,22 @@ button {
   display: none;
 }
 
+/* Contact */ 
+
 .contact-banner{
   background-image: url(../images/feed/institucional.jpeg);
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+}
+
+.contactCard {
+  margin: 2%;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Fondo blanco */
+  padding: 1rem;
 }
 
 .fill-current-contact{
@@ -3317,19 +3333,6 @@ footer{
   width: 30rem;
 }
  
-  /* Cambiar el color de los iconos SVG a blanco */
-  .fill-current-contact {
-    fill: #ffffff; /* Cambiar a blanco */
-  }
-
-
-    .container-institucional{
-      width: 100%;
-    }
-
-    .contact-text h5,.contact-text p {
-      color: white !important;
-    }
     .sm\:flex-col-reverse{
       flex-direction: column-reverse !important;
     }

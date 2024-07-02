@@ -3,6 +3,7 @@ const footer = document.getElementById("footer");
 footer.innerHTML = `
 
 
+
 <!-- ====== Footer Section Start -->
 
 <footer class="relative z-10  pt-20 lg:pt-[100px]">
@@ -14,13 +15,15 @@ footer.innerHTML = `
           <a href="index.html" class="mb-6 inline-block max-w-[160px]">
             <img src="assets/images/logo/logo_dba_blanco.png" alt="logo" class="max-w-full" />
           </a>
+
           <p class="mb-8 max-w-[270px] text-base text-gray-7">
             Diagnóstico Buenos Aires. <br> Tecnología, profesionalismo, calidad médica y atención centrada en las
             personas.
           </p>
           <p class="mb-[18px] text-base text-gray-7 ">
-            contacto@diagnostico.com
+            contacto@diagnosticoba.com
           </p>
+
 
           <div class="-mx-3 flex items-center">
 
@@ -51,6 +54,10 @@ footer.innerHTML = `
 
           </div>
         </div>
+
+        <a href="https://www.solariega.com.ar/" class="mb-6 inline-block max-w-[160px]">
+          <img src="assets/images/logo/logoSolariegaBlanco.png" alt="logo" class="max-w-full" />
+        </a>
       </div>
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
         <div class="mb-10 w-full">
@@ -60,7 +67,7 @@ footer.innerHTML = `
               <a href="index.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Inicio
               </a>
-            </li>     
+            </li>
             <li>
               <a href="estudios.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Estudios
@@ -102,7 +109,7 @@ footer.innerHTML = `
 
       <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
         <div class="mb-10 w-full">
-          <h4 class="mb-9 text-lg font-semibold text-white">Telefonos</h4>
+          <h4 class="mb-9 text-lg font-semibold text-white">Teléfonos</h4>
           <ul>
             <li class="mb-3 inline-block text-base text-gray-7 ">
               <a href="https://wa.me/5491162194438?text=Hola%20gestion%20de%20admisiones,%20tengo%20una%20consulta." target="_blank">Gestion de admisiones<br>+54 9 11 6219-4438</a>
@@ -111,9 +118,7 @@ footer.innerHTML = `
             <li class="mb-3 inline-block text-base text-gray-7 ">
               <a href="https://wa.me/5491121688077?text=Hola%20Recursos%20Humanos,%20tengo%20una%20consulta." target="_blank">Recursos Humanos<br>+54 9 11 2168-8077</a>
             </li>
-            <li class="mb-3 inline-block text-base text-gray-7 ">
-              <a href="https://wa.me/5491121688077?text=Hola%20Diagnóstico%20Buenos%20Aires,%20tengo%20una%20consulta." target="_blank">Whatsapp<br>+54 9 11 2168-8077</a>
-            </li>
+           
           </ul>
         </div>
       </div>
@@ -157,5 +162,4 @@ footer.innerHTML = `
 
 </footer>
 <!-- ====== Footer Section End -->
-
 `
