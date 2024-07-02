@@ -60,8 +60,7 @@ footer.innerHTML = `
               <a href="index.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Inicio
               </a>
-            </li>
-            <li>
+            </li>     
             <li>
               <a href="estudios.html" class="mb-3 inline-block text-base text-gray-7 ">
                 Estudios

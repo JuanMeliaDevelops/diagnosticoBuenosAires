@@ -39,6 +39,9 @@
 */
 
 html {
+
+  scroll-behavior: smooth;
+
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -626,79 +629,6 @@ body {
   background-position: center; /* Centra la imagen */
   background-attachment: fixed; /* Fija la imagen de fondo para que permanezca visible mientras se hace scroll */
 }
-.estudiosContainer {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.estudiosContainer .estudio {
-  margin: 1.5%;
-  border-radius: 15px;
-  width: 280px;
-  height: 180px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-.estudiosContainer .estudio h4 {
-  width: 100%;
-  padding: 4%;
-  font-weight: 500;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
-}
-
-.estudiosContainer .estudio:hover {
-  cursor: pointer;
-  opacity: 0.8 !important;
-  transform: scale(1.05);
-}
-
-.estudiosContainer .estudio:hover h4 {
-  font-size: 1.1em;
-}
-
-#estudioInfo {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-#estudioInfo img {
-  max-width: 40%;
-  height: auto;
-  margin-top: 10px;
-}
-
-#closeBtn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-#closeBtn svg {
-width: 4vw;
-height: 4vh;
-fill: #103144 ;
-}
-
 
 
 .main-container {
@@ -717,15 +647,40 @@ button {
   outline: 0;
 }
 
+/* Estudios Start */
 
-
-
-
-.contact-banner{
-  background-image: url("../images/feed/img1.jpg");
-  background-size: cover;
+.estudiosCard {
+  margin: 2%;
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff; /* Fondo blanco */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
+.estudiosCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.estudiosCard h4 {
+  margin: 0;
+}
+
+.estudiosCard i {
+  font-size: 1.5rem;
+  color: #235779;
+}
+
+
+/* Estudios End */
 
 
 .alertas {
@@ -740,7 +695,10 @@ button {
   display: none;
 }
 
-
+.contact-banner{
+  background-image: url(../images/feed/institucional.jpeg);
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+}
 
 .fill-current-contact{
   fill: #235779;
@@ -796,6 +754,7 @@ footer{
 }
 
 .phone-numbers {
+  font-weight: 500;
   display: none;
   flex-direction: column;
   margin-bottom: 10px;
@@ -3357,9 +3316,7 @@ footer{
 .w-60{
   width: 30rem;
 }
-  .estudiosText{
-    width: 90vw;
-  }
+ 
   /* Cambiar el color de los iconos SVG a blanco */
   .fill-current-contact {
     fill: #ffffff; /* Cambiar a blanco */
